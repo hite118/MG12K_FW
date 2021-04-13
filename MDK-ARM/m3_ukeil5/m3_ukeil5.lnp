@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"m3_ukeil5\startup_stm32f103xb.o"
+"m3_ukeil5\main.o"
+"m3_ukeil5\stm32f1xx_it.o"
+"m3_ukeil5\stm32f1xx_hal_msp.o"
+"m3_ukeil5\dwt_stm32_delay.o"
+"m3_ukeil5\stm32f1xx_hal_gpio_ex.o"
+"m3_ukeil5\stm32f1xx_hal_adc.o"
+"m3_ukeil5\stm32f1xx_hal_adc_ex.o"
+"m3_ukeil5\stm32f1xx_hal_tim.o"
+"m3_ukeil5\stm32f1xx_hal_tim_ex.o"
+"m3_ukeil5\stm32f1xx_hal_uart.o"
+"m3_ukeil5\stm32f1xx_hal.o"
+"m3_ukeil5\stm32f1xx_hal_rcc.o"
+"m3_ukeil5\stm32f1xx_hal_rcc_ex.o"
+"m3_ukeil5\stm32f1xx_hal_gpio.o"
+"m3_ukeil5\stm32f1xx_hal_dma.o"
+"m3_ukeil5\stm32f1xx_hal_cortex.o"
+"m3_ukeil5\stm32f1xx_hal_pwr.o"
+"m3_ukeil5\stm32f1xx_hal_flash.o"
+"m3_ukeil5\stm32f1xx_hal_flash_ex.o"
+"m3_ukeil5\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "m3_ukeil5\m3_ukeil5.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "m3_ukeil5.map" -o m3_ukeil5\m3_ukeil5.axf
